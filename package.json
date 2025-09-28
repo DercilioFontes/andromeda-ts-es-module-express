@@ -22,7 +22,7 @@
   "main": "app.ts",
   "scripts": {
     "node:start": "node --experimental-strip-types src/app.ts",
-    "andromeda:start": "andromeda src/app.ts",
+    "andromeda:start": "andromeda run src/app.ts",
     "build": "tsc",
     "p": "andromeda fmt src/ && andromeda lint src/"
   },

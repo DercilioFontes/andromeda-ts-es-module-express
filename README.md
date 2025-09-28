@@ -1,8 +1,18 @@
 # Andromeda Express TypeScript ES module Server
 
-## Setup
+## Andromeda setup
+
+- Check docs in <https://github.com/tryandromeda/andromeda>
+- `andromeda run hello-world.js`
+- `andromeda run hello-world.ts`
+
+## Project setup
 
 - `npm install`
+
+- Run with Node `npm run node:start`
+
+- Run with Node `npm run andromeda:start` or `andromeda run src/app.ts`
 
 ## Andromeda image
 
@@ -10,9 +20,9 @@
 
 ## Multi-stage build
 
-- The app is build with npm and Node
+- The app dependencies are built with Node and npm
 
-- The app runner is Andromeda
+- The app runner uses Andromeda
 
 ```sh
 # TS
