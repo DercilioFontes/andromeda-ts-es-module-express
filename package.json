@@ -1,0 +1,38 @@
+{
+  "name": "andromeda-ts-es-module-express",
+  "version": "1.0.0",
+  "description": "Andromeda + Express + TypeScript + ES module",
+  "keywords": [
+    "andromeda",
+    "typescript",
+    "express",
+    "esmodule"
+  ],
+  "homepage": "https://github.com/DercilioFontes/andromeda-ts-es-module-express#readme",
+  "bugs": {
+    "url": "https://github.com/DercilioFontes/andromeda-ts-es-module-express/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DercilioFontes/andromeda-ts-es-module-express.git"
+  },
+  "license": "ISC",
+  "author": "dafdev",
+  "type": "module",
+  "main": "app.ts",
+  "scripts": {
+    "node:start": "node --experimental-strip-types src/app.ts",
+    "andromeda:start": "andromeda src/app.ts",
+    "build": "tsc",
+    "p": "andromeda fmt src/ && andromeda lint src/"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node-ts": "^23.6.1",
+    "@tsconfig/node24": "^24.0.1",
+    "@types/express": "^5.0.3",
+    "typescript": "^5.9.2"
+  }
+}

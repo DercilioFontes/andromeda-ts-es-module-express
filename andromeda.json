@@ -1,0 +1,46 @@
+{
+  "name": "andromeda-ts-es-module-express",
+  "version": "1.0.0",
+  "description": "Andromeda + Express + TypeScript + ES module",
+  "author": "dafdev",
+  "license": "ISC",
+  "runtime": {
+    "no_strict": false,
+    "verbose": false,
+    "disable_gc": false,
+    "print_internals": false,
+    "expose_internals": false,
+    "include": ["src/**/*.ts", "lib/**/*.js"],
+    "exclude": ["**/*.test.ts", "**/node_modules/**"],
+    "timeout": 30000
+  },
+  "format": {
+    "line_width": 80,
+    "use_tabs": false,
+    "tab_width": 2,
+    "trailing_comma": true,
+    "semicolons": true,
+    "single_quotes": false
+  },
+  "lint": {
+    "enabled": true,
+    "rules": [
+      "empty_function",
+      "empty_statement",
+      "var_usage",
+      "unused_variable"
+    ],
+    "disabled_rules": [],
+    "max_warnings": 50
+  },
+  "tasks": {
+    "dev": "andromeda run src/app.ts",
+    "build": {
+      "description": "Build the project",
+      "command": "echo Building project...",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
